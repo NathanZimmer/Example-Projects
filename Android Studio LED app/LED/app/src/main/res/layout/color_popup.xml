@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="251dp"
+        android:layout_height="264dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
+
+        <Button
+            android:id="@+id/submit_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="@+id/cancel_color"
+            app:layout_constraintEnd_toStartOf="@+id/cancel_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cancel_color"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/cancel_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toEndOf="@+id/submit_color"
+            app:layout_constraintTop_toBottomOf="@+id/green_text"
+            app:layout_constraintVertical_bias="0.423" />
+
+        <EditText
+            android:id="@+id/red_text"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:hint=" R"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/green_text"
+            app:layout_constraintEnd_toStartOf="@+id/green_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/green_text"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/green_text"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:hint=" G"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/submit_color"
+            app:layout_constraintEnd_toStartOf="@+id/blue_text"
+            app:layout_constraintStart_toEndOf="@+id/red_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.494"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/blue_text"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:hint=" B"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/green_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/green_text"
+            app:layout_constraintTop_toTopOf="@+id/green_text"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

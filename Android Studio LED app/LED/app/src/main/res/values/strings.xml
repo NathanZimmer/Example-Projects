@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Nathan\'s LED Controller</string>
+    <string name="toolbar_options">options</string>
+    <string name="toolbar_set_custom_color">Set custom color</string>
+    <string name="brightness_text">Brightness</string>
+    <string name="light_options_text">Light options:</string>
+    <string name="rb_color_text">Color</string>
+    <string name="rb_rainbow_text">Rainbow</string>
+    <string name="togglebutton_text">ToggleButton</string>
+
+    <string-array name="LED_colors">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Pink</item>
+        <item>Cyan</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>White</item>
+        <item>Custom</item>
+    </string-array>
+
+</resources>
